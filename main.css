@@ -51,10 +51,12 @@ article {
     color: #ffffff;
     font-size: 30px;
 }
-.overview > .welcome > .presentation > .virtue {
+.overview > .welcome > .presentation > .border{
+    border-bottom: 5px solid #ffffff;
+}
+.overview > .welcome > .presentation > .border > .virtue {
     animation: fadeInOut 4s; 
     animation-fill-mode: forwards;
-    border-bottom: 5px solid #ffffff;    
 }
 
 @keyframes fadeInOut {
@@ -64,6 +66,12 @@ article {
     16% {
        opacity: 0;
     }
+    /* 32% {
+       opacity: 0.3;
+    }
+    44% {
+       opacity: 0.6;
+    } */
     84% {
        opacity: 1;
     }
@@ -142,7 +150,8 @@ article {
 .footer {
     position: absolute;
     top: 92%;
-    left: 15%;
+    width: 50%;
+    /* left: 15%; */
 }
 .social-media {
     display: flex;
