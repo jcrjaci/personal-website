@@ -4,6 +4,24 @@
 <head>
     <title>Jacinto Rodrigues</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script>
+        window.onload = () => {
+                const element = document.getElementById("virtue");
+                setInterval
+                const virtues = ['Portuguese','Javacript Enthusiast', 'FULLStack Developer', 'React Lover'];
+                let i=0;
+                setInterval(() => {
+                    console.log(virtues[i]);
+                    element.innerHTML = virtues[i];
+                    // element.classList.remove('virtue');
+                    // element.classList.add('virtue'); // Add class
+                    i ++;
+                    if (i ===virtues.length) {
+                        i = 0;
+                    }
+                }, 3000);
+            };
+        </script>
 </head>
 
 <body>
@@ -16,7 +34,7 @@
                         <span class="presentation">
                             <span>I am a </span>
                         <span class="border">
-                            <span class="virtue">React Lover</span>
+                            <span id="virtue" class="virtue">React Lover</span>
                         </span>
                         </span>
                         <!-- <span>FULLStack Developer</span> -->
